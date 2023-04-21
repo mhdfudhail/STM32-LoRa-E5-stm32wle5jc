@@ -19,10 +19,10 @@ def get_data():
 def index():
     global bLat,bLon,iLat,iLon
     iLat,iLon,bLat,bLon = get_data()
-    distance = getDistance(node=(iLat,iLon),bt=(bLat,bLon))
-    print(distance)
-    colour = checkBoundary(distance)
-    print(bLat,",",bLon)
+#     distance = getDistance(node=(iLat,iLon),bt=(bLat,bLon))
+#     print(distance)
+#     colour = checkBoundary(distance)
+#     print(bLat,",",bLon)
 
     folium_map = folium.Map(location=(bLat,bLon),zoom_start=16)
 
