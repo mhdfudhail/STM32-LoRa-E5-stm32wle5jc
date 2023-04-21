@@ -12,9 +12,6 @@ def collectData():
         if serialData.in_waiting >0:
             myData = serialData.readline().decode('utf-8').rstrip()
             # print(myData)
-            #serialData = "10.029137,76.328377,1"
-            data = myData.split(",")
-            receiCord = [10.029576,76.328476]
             if len(data)>0:
                 # print(data)
                 print("----collected----")
